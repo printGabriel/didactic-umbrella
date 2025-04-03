@@ -1,17 +1,44 @@
 name: Continuous Integration
 on:
-pull_request:
-  branches:
-    - main
+
+  pull_request:
+
+    branches:
+
+      - main # ou qualquer outra branch
+
+ 
 
 jobs:
-  build:
+
+  deliver:
+
     runs-on: ubuntu-latest
+
     steps:
+
       - name: Check out repository code
+
         uses: actions/checkout@v4
-   
-      - name: Pyton Lint Code Scanning Action
-        uses: advanced-security/python-lint-code-scanning-action@v1.1.2
+
+ 
+
+      - name: Simulating Continuous Delivery
+
+        run: echo "Simulando Continuous Delivery..."
+
+ 
+
+      - name: Upload artifacts
+
+        uses: actions/upload-artifact@v4
+
         with:
-          linter: pylint
+
+          name: projeto.zip
+
+          path: |
+
+            **/*.py
+
+            README.md
