@@ -11,7 +11,7 @@ on:
         - name: Check out repository code
           uses: actions/checkout@v4
 
-        - name: Simulando Continuous Delivery
+        - name: Simulando o Continuous Delivery
         - uses: actions/upload-artifact@v4
           with:
             name: projeto.zip
