@@ -23,9 +23,9 @@ jobs:
 
  
 
-      - name: Simulating Continuous Delivery
+      - name: Simulating Continuous Integration
 
-        run: echo "Simulando Continuous Delivery..."
+        run: echo "Simulando Continuous Integration..."
 
  
 
