@@ -1,37 +1,21 @@
 name: Continuous Integration
 on:
-
   pull_request:
-
     branches:
-
       - main # ou qualquer outra branch
 
  
 
 jobs:
-
   deliver:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Check out repository code
-
         uses: actions/checkout@v4
-
- 
-
       - name: Simulating Continuous Delivery
-
         run: echo "Simulando Continuous Delivery..."
-
- 
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
-
         with:
           name: projeto.zip
           path: |
