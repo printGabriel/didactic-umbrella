@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Simulando Continuous Delivery
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: projeto.zip
           path: |
@@ -48,7 +48,7 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ vars.DOCKERHUB_USERNAME }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push
