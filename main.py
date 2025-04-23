@@ -26,6 +26,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 async def funcaoteste():
     return {"teste": True, "num_Aleatorio": random.randint(0, 4000)}
 
+
 @app.post("/estudantes/cadastro")
 async def create_estudante(estudante: Estudante):
     return estudante
