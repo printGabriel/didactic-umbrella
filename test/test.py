@@ -29,13 +29,13 @@ def test_update_estudante_negativo(item_estudante: int):
     yield result
     assert result
 
-def test_delete_estudante(id_estudante: int)
+def test_delete_estudante(id_estudante: int):
     result = delete_estudante(-5)
     yield result
     assert not result
 
 
-def test_delete_estudante(id_estudante: int)
+def test_delete_estudante(id_estudante: int):
     result = delete_estudante(5)
     yield result
     assert result
